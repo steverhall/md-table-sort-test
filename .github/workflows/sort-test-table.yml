@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  sort_table:
+    runs-on: ubuntu-latest
+    name: Sort markdown table
+    steps:
+      - uses: steverhall/sort-markdown-table@v1
+        with: 
+          file-name: 'docs/*.md'
